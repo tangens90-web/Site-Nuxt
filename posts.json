@@ -1,0 +1,168 @@
+{
+  "posts": [
+    {
+      "id": 0,
+      "title": "json-server",
+      "desc": "I made 1 vs 5",
+      "author": "typicode"
+    },
+    {
+      "id": 1,
+      "title": "json-server",
+      "desc": "I made 1 vs 5",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "json-server",
+      "desc": "I made 1 vs 4",
+      "author": "typicode"
+    },
+    {
+      "id": 3,
+      "title": "json-server",
+      "desc": "I made 1 vs 3",
+      "author": "typicode"
+    },
+    {
+      "id": 4,
+      "title": "json-server",
+      "desc": "I made 1 vs 6",
+      "author": "typicode"
+    },
+    {
+      "id": 5,
+      "title": "json-server",
+      "desc": "I made 1 vs 5",
+      "author": "typicode"
+    },
+    {
+      "desc": "testpost",
+      "id": 6
+    },
+    {
+      "desc": "testpost",
+      "id": 7
+    },
+    {
+      "desc": "testpost",
+      "id": 8
+    },
+    {
+      "desc": "testpost",
+      "id": 9
+    },
+    {
+      "desc": "testpost",
+      "id": 10
+    },
+    {
+      "desc": "testpost",
+      "id": 11
+    },
+    {
+      "desc": "testpost",
+      "id": 12
+    },
+    {
+      "desc": "testpost",
+      "id": 13
+    },
+    {
+      "desc": "testpost",
+      "id": 14
+    },
+    {
+      "desc": "testpost",
+      "id": 15
+    },
+    {
+      "desc": "testpost",
+      "id": 16
+    },
+    {
+      "desc": "testpost",
+      "id": 17
+    },
+    {
+      "desc": "testpost",
+      "id": 18
+    },
+    {
+      "desc": "testpost",
+      "id": 19
+    }
+  ],
+  "users": [
+    {
+      "email": "424242",
+      "password": "242424",
+      "confirmed_password": "2424242",
+      "id": 16
+    },
+    {
+      "email": "45242",
+      "password": "242424",
+      "confirmed_password": "234242",
+      "id": 17
+    },
+    {
+      "desc": "testpost",
+      "id": 18
+    },
+    {
+      "email": "45242",
+      "password": "242424",
+      "confirmed_password": "234242",
+      "id": 19
+    },
+    {
+      "email": "2424",
+      "password": "24242",
+      "confirmed_password": "42424",
+      "id": 20
+    },
+    {
+      "email": "4242",
+      "password": "2442",
+      "confirmed_password": "42424",
+      "id": 21
+    },
+    {
+      "email": "42442",
+      "password": "42424",
+      "confirmed_password": "42424",
+      "id": 22
+    },
+    {
+      "email": "42442",
+      "password": "42424",
+      "confirmed_password": "42424",
+      "id": 16
+    },
+    {
+      "email": "42442",
+      "password": "42424",
+      "confirmed_password": "42424",
+      "id": 17
+    },
+    {
+      "email": "kek@mail.ru",
+      "password": "2424",
+      "confirmed_password": "2424",
+      "id": 23
+    },
+    {
+      "email": "wtwtwt@mail.ru",
+      "password": "55555",
+      "confirmed_password": "55555",
+      "id": 24
+    },
+    {
+      "email": "wqrqr@mail.ru",
+      "password": "11111",
+      "confirmed_password": "11111",
+      "id": 25
+    }
+  ]
+}
