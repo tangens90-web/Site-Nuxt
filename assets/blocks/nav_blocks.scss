@@ -1,0 +1,26 @@
+.nav_blocks{
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+.name{
+    height:100%;
+    cursor: pointer;
+    padding: 25px 10px 0px;
+    font-weight: 700;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    background-color: $black;
+   
+    & h2{
+       font-size: 25px;
+       margin: 0px; 
+    }
+}
+.left_header{
+    display: flex;
+    justify-content: left;
+    color: white;
+    
+}

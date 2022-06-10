@@ -1,5 +1,6 @@
 <template>
   <div>
+    <div>.?aadadadadadadad</div>
     <Nuxt />
   </div>
 </template>

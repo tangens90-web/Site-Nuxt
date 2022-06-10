@@ -1,0 +1,4 @@
+// @include font("arial", "arial", "400", "normal");
+// открываем node_modules/gulp-fonter/dist/index.js, находим строку:
+// newFont.path = source.dirname + '\\' + source.stem + '.' + type;
+// , меняем '\\' на '/', и должно заработать.

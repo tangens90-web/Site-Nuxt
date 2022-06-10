@@ -1,0 +1,42 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+
+  @font-face {
+  font-family: $font_name;
+  font-display: swap;
+  src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+  font-weight: #{$weight};
+  font-style: #{$style};
+  }
+  }
+@import "_vars.scss";
+@import "blocks/header.scss";
+@import 'fonts';
+@import "blocks/container.scss";
+@import "blocks/navigation.scss";
+@import "blocks/burgerbutton.scss";
+@import "blocks/grid_block.scss";
+@import "blocks/nav_blocks.scss";
+@import "blocks/auth.scss";
+@import "blocks/sign_log_bl.scss";
+@import "blocks/rightmenu.scss";
+
+body {
+  background-color: $black;
+  margin: 0;
+  color: white;
+  font-size: 12px;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+  }
+  *,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+

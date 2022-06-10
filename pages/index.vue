@@ -4,7 +4,7 @@
       
       <!-- <Logo />
       <h1 class="title">vite-example</h1> -->
-      <Header />
+      <Main/>
       
       <div class="links">
         <!-- <NuxtLink
@@ -42,20 +42,23 @@ export default {
       meta: [
         {
           hid: "description",
-          name: "description",
-          content: "Increment exmaple",
+          name: "News",
+          content: "Cybersport in Valorant",
         },
       ],
     };
   },
   async fetch({store}){
         // if(store.getters["vuexposts/posts"].length===0){
+          
+          
            await store.dispatch('vuexposts/getPosts')
         // }
     },
   data() {
     return {
       title: "",
+      num:9,
     };
   },
   // async mounted() {

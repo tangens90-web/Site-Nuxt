@@ -7,14 +7,17 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" v-model.trim="email">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" v-model.trim="email" placeholder="Enter your email" >
                         <span v-if="!emailCheck">Введён неправильный Email адрес</span> <br>
                     </div>
                     <div class="form-group">
+                        <div class="password">
                         <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" v-model.trim="password">
+                        <input type="password" class="form-control" id="login_password" v-model.trim="password" placeholder="Enter password">
+                        <a href="#" class="login-password-control" @click.prevent="showPassword($event,`login_password`)"></a>
 
                         <span v-if="!passwordCheck">Неправильный пароль</span> <br>
+                    </div>
                     </div>
 
                     <p @click="sendToLogIn" class="send">If you already have account, pls log in</p>
@@ -50,9 +53,28 @@ export default {
         closeLoginForm:'signnlog/CLOSE_LOGIN_FORM',
         openSign:'signnlog/SEND_TO_SIGN_FORM'
       }),
+        showPassword(evt,id){
+        console.log(id)
+        
+        let input = document.getElementById(`${id}`)
+        console.log(input)
+        
+        if(input.getAttribute('type')=='password'){
+          evt.target.classList.add('view');
+          input.setAttribute('type', 'text');
+        }
+        else{
+          evt.target.classList.remove('view');
+          input.setAttribute('type', 'password');
+        }
+        return false
+        
+      },
         sendToLogIn() {
             this.openSign()
-
+            console.log("login")
+            
+            this.closeHints()
         },
         validateEmail(emailAdress) {
             let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -84,9 +106,13 @@ export default {
                 }
             }
         },
+        closeHints(){
+        this.emailCheck = true
+        this.passwordCheck = true
+        },
         closeForm() {
             this.closeLoginForm()
-            
+            this.closeHints()
             this.email = this.password = ''
         }
     },
@@ -99,19 +125,23 @@ export default {
 }
 </script>
 <style scoped>
-    /* form{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%) ;
-        background-color: yellowgreen;
-        z-index:5;
-    }
-    .send{
-      color: blue;
-      cursor: pointer;
-    } */
+    .password {
+	/* width: 300px; */
+	  margin: 17px auto;
+	  position: relative;
+  }
+    .login-password-control {
+	position: absolute;
+	top: 57px;
+	right: 6px;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
+}
+    .login-password-control.view {
+	background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
+}
 
     
 </style>

@@ -1,0 +1,19 @@
+.container{
+//   width: calc(100% - #{$sidebar-width});
+  // width: calc(100%-#{$margin-left});
+  width: 90%;
+  
+  height:100%;
+  margin: 0 auto;
+  
+  border-left: 2px solid yellowgreen;
+  border-right: 2px solid yellowgreen;
+  @media (max-width:1000px) {
+    width: 100%; 
+   
+
+
+}
+  
+  
+}

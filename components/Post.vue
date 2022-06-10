@@ -1,19 +1,21 @@
 <template>
 <div>
 
-    <heads></heads>
+    <my-header></my-header>
 
     <div class="container">
-        <div class="one_post" v-for="item in post" :key="item.id">
+        <article class="one_post" v-for="item in post" :key="item.id">
             <h1>{{item.title}}</h1>
             <p>{{item.body}}</p>
-        </div>
+        </article>
     </div>
 
     <sign-form></sign-form>
 
     <log></log>
-    <comments></comments>
+     
+    <nuxt-child/>
+    
 
     
 
@@ -21,29 +23,32 @@
 </template>
 
 <script>
-import Heads from "./Head.vue"
+import MyHeader from "./Header.vue"
 import SignForm from "./SignForm.vue"
 
 import Log from "./LogIn.vue"
 import Comments from "./Comments.vue"
 
 export default {
+    async fetch () {
+        console.log('qeqeqeqeqe')
+        
+    this.$store.dispatch('vuexposts/getPosts',0)
+},
     data() {
         return {
             
         }
     },
-    async created(){
-        
-        return this.$store.dispatch('vuexposts/getPosts')
-    },
+    
     computed: {
         post() {
-            return this.$store.getters["vuexposts/posts"].filter(item => item.id == this.$route.params.id)
+            return this.$store.getters["vuexposts/allPosts"].
+            filter(item => item.id == this.$route.params.id)
         }
     },
     components: {
-        Heads,
+        MyHeader,
         SignForm,
         Log,
         Comments

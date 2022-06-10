@@ -1,0 +1,45 @@
+.right_menu{
+    
+    position: absolute;
+    right: 0;
+    top: 450px;
+    z-index: 35;
+    width: 600px;
+    height: 1000px;
+}
+
+.left_content{
+   
+    width: 1000px;
+    border-bottom: 150px solid yellow;
+    border-left: 125px solid transparent;
+    border-right: 125px solid transparent;
+    transform: rotate(-90deg);
+    transition: 1s all;
+    &:hover{
+        width: 500px;
+        height: 850px;
+        background-color:yellow; 
+        transform: rotate(0deg);
+       
+    }
+}
+
+.text_in_content{
+    position: absolute;
+    font-size: 25px;
+    background-color: black;
+    border: 5px solid $gray;
+    padding:20px 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.right_transformation{
+
+    top:100px;
+
+}
+

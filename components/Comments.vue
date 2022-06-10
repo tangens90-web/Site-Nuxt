@@ -9,7 +9,7 @@
 
             <button class="add_comment" @click="addComment">Добавить комментарий</button>
 
-        </div>
+        
 
         <div class="comment_container">
 
@@ -19,7 +19,7 @@
             </div>
 
         </div>
-
+        </div>
     </div>
 </div>
 </template>
@@ -57,6 +57,7 @@ p {
 }
 
 .comments {
+    padding-left: 20px;
     font-size: 25px;
 }
 

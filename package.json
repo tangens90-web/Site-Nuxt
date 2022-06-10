@@ -17,6 +17,8 @@
     "nuxt": "^2.15.3"
   },
   "devDependencies": {
-    "nuxt-vite": "^0.0.37"
+    "nuxt-vite": "^0.0.37",
+    "sass": "^1.49.4",
+    "sass-loader": "^10.2.1"
   }
 }
