@@ -1,5 +1,5 @@
 # Nuxt + Vite
-
+![](static/nuxt.png)
 Nuxt 2 + vite
 
 - [Vite](https://vitejs.dev/)
