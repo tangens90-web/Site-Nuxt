@@ -1,6 +1,6 @@
-# vite-example
+# Nuxt + Vite
 
-Nuxt 2 + vite + CMS
+Nuxt 2 + vite
 
 - [Vite](https://vitejs.dev/)
 
